@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="62048e96-801b-45a6-b322-0ff6a854e8c4" ChangeDateTime="04/07/2017 10:19:54">
+    <Property Name="ElementName" Value="[dbo].[账目查询].[姓名]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[账目查询]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="姓名编号" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1b40120e-c8b2-4f32-bff4-28ff7ca9a654" ChangeDateTime="04/07/2017 10:45:33">
+    <Property Name="ElementName" Value="[dbo].[FK_账目查询_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[账目查询]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_姓名编号]" />
+  </Operation>
+</Operations>

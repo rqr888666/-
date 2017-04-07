@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="f3c29bd1-7778-490e-8296-c12cfdbd2124" ChangeDateTime="04/06/2017 13:09:22">
+    <Property Name="ElementName" Value="[dbo].[材料分类编号]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[材料分类]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[材料类别]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ad7afdeb-008e-411b-93cf-c4821ce90550" ChangeDateTime="04/06/2017 13:10:18">
+    <Property Name="ElementName" Value="[dbo].[材料分类].[材料分类编号]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[材料分类]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[材料类别]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5543326e-8210-4dd9-842a-fb4266267bec" ChangeDateTime="04/06/2017 13:11:52">
+    <Property Name="ElementName" Value="[dbo].[材料信息].[材料分类]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[材料信息]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[材料分类编号]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="768cbba3-bebc-49fc-b9ae-b16076f70b9d" ChangeDateTime="04/06/2017 13:36:02">
+    <Property Name="ElementName" Value="[dbo].[姓名].[IX_姓名_Column_1]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[姓名]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_姓名_Column]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dcbd0893-dcec-4d08-bb90-c56fd7431689" ChangeDateTime="04/07/2017 09:01:41">
+    <Property Name="ElementName" Value="[dbo].[FK_产品BOM信息_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[产品BOM信息]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_产品BOM信息_ToTable]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cd42a94a-d31a-4cce-be7f-e862a542a6fb" ChangeDateTime="04/07/2017 09:01:57">
+    <Property Name="ElementName" Value="[dbo].[FK_产品BOM信息_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[产品BOM信息]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_材料不好好]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b8fbcb62-38d3-49e3-a562-925b6b27de40" ChangeDateTime="04/07/2017 09:02:02">
+    <Property Name="ElementName" Value="[dbo].[FK_材料不好好]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[产品BOM信息]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_材料编号]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cb02ab73-bb76-4e9f-8075-1386338c550a" ChangeDateTime="04/07/2017 09:02:10">
+    <Property Name="ElementName" Value="[dbo].[FK_产品BOM信息_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[产品BOM信息]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_产品编号]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="401225b2-b097-4a54-bbea-9f8e36e4de99" ChangeDateTime="04/07/2017 09:02:24">
+    <Property Name="ElementName" Value="[dbo].[PK_产品BOM信息]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[产品BOM信息]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_产品BOM]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="100049dd-b0ea-4c24-a784-18e8ae94be7d" ChangeDateTime="04/07/2017 09:05:38">
+    <Property Name="ElementName" Value="[dbo].[材料信息].[IX_材料信息_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[材料信息]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_材料信息]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e97275fa-d15b-4461-b665-06b86a71d952" ChangeDateTime="04/07/2017 09:05:43">
+    <Property Name="ElementName" Value="[dbo].[FK_材料信息_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[材料信息]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_材料信息]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ebc3f0b8-8aa9-4fde-9d6c-0b322b1e75d6" ChangeDateTime="04/07/2017 09:06:09">
+    <Property Name="ElementName" Value="[dbo].[产品信息].[IX_产品信息_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[产品信息]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_产品信息]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f46a3c46-4b71-4838-ba25-90eb52cb9cf1" ChangeDateTime="04/07/2017 09:06:13">
+    <Property Name="ElementName" Value="[dbo].[FK_产品信息_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[产品信息]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_产品信息]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="adcfc3a6-7dfe-45d4-aa64-25509aeae1ac" ChangeDateTime="04/07/2017 09:07:47">
+    <Property Name="ElementName" Value="[dbo].[姓名].[IX_姓名_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[姓名]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_姓名]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e60e5359-1814-43a0-b246-395a47e35835" ChangeDateTime="04/07/2017 09:08:15">
+    <Property Name="ElementName" Value="[dbo].[姓名].[IX_姓名_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[姓名]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_姓名编号]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5f9465bb-178c-411d-ace5-94f836599b6b" ChangeDateTime="04/07/2017 09:10:02">
+    <Property Name="ElementName" Value="[dbo].[FK_账目查询_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[账目查询]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_姓名]" />
+  </Operation>
+</Operations>
